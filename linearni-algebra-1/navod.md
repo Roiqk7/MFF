@@ -39,3 +39,7 @@ Tedy `...` lze použít tak, aby se nemuseli vypisovat všechny čísla v interv
 ### Zkouška
 
 Na "zkoušku" je u vět 10 minut a u témat 15 minut. Po uplynutí této doby se program ukončí. Pokud chcete skončit dříve, stiskněte `Ctrl+C`. Program je pro brzké ukončení připraven. Zhodnocení je pak ponecháno na uživateli.
+
+### Snadná úprava
+
+Program je snadné upravit i pro jiné předměty/otázky. Stačí upravit soubor `vety.txt` a `temata.txt` s odpovídajícími větami a tématy.
