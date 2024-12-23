@@ -84,13 +84,17 @@ def vytiskniChybu(zprava, vyjimka = None):
         if vyjimka:
                 print(f"Vyjimka: {vyjimka}")
 
-def casomira(minuty):
+def casomira(minutyCelkem):
         try:
-                print(f"\nZačíná zkouška. Časový limit: {minuty} minut.")
-                for i in range(minuty, 0, -1):
-                        sys.stdout.write(f"\rZbývá {i} minut.")
+                print(f"\nZačíná zkouška. Časový limit: {minutyCelkem} minut.")
+                sekundyCelkem = minutyCelkem * 60
+                for i in range(sekundyCelkem, 0, -15):
+                        minuty, sekundy = divmod(i, 60)
+                        sys.stdout.write(f"\rZbývá: [{minuty:02}:{sekundy:02}]")
                         sys.stdout.flush()
-                        time.sleep(60)
+                        time.sleep(15)
+                # Odstraní časovač
+                sys.stdout.write("\r" + " " * 20 + "\r")
                 print("\nČas vypršel. Zkouška skončila.")
         except KeyboardInterrupt:
                 print("\nZkouška byla předběžně ukončena.")
