@@ -5,7 +5,7 @@ Program je napsán na učení se na zkoušku z lineární algebry 1. Program obs
 ## Návod na použití
 
 ```bash
-main.py [-h] [--vety] [--temata] [--vyluc VYLUC]
+usage: main.py [-h] [--vety] [--temata] [--vyluc VYLUC] [--cas CAS]
 ```
 
 ### Příklady použití
@@ -23,6 +23,7 @@ python3 main.py --vety --vyluc="[7, ..., 10]"
 - `--vety`: začne zkoušku z náhodně vybrané věty
 - `--temata`: začne zkoušku z náhodně vybraného tématu
 - `--vyluc VYLUC`: vyloučí z výběru věty s danými indexy (bráno podle čísla řádku ve zdrojovém souboru)
+- `--cas CAS`: nastaví čas na zkoušku v minutách
 
 #### `--vyluc` argument
 

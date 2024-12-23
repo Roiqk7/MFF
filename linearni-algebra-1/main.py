@@ -16,18 +16,22 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--vety", help="Zkouška vět", action='store_true')
 parser.add_argument("--temata", help="Zkouška témat", action='store_true')
 parser.add_argument("--vyluc", help="Vyloučí otázky/témata se zadanými indexy [1,2,3,...,N]")
+parser.add_argument("--cas", help="Časový limit v minutách", type=int)
 
 def main():
         argumenty = parser.parse_args()
 
         try:
                 vylouceneOtazky = []
+                cas = None
                 if argumenty.vyluc:
                         vylouceneOtazky = vylouceneOtazkyParser(argumenty.vyluc)
+                if argumenty.cas:
+                        cas = argumenty.cas
                 if argumenty.vety:
-                        vety(vylouceneOtazky)
+                        vety(vylouceneOtazky, cas)
                 elif argumenty.temata:
-                        temata(vylouceneOtazky)
+                        temata(vylouceneOtazky, cas)
         except Exception as e:
                 vytiskniChybu("Nastala chyba při zpracování argumentů.", e)
 
@@ -54,18 +58,22 @@ def vylouceneOtazkyParser(strVylouceneOtazky):
         vylouceneOtazky = list(set(vylouceneOtazky))
         return vylouceneOtazky
 
-def vety(vylouceneVety):
+def vety(vylouceneVety, cas = 10):
+        if cas == None:
+                cas = 10
         nahodnaVeta = nahodnaOtazka(18, vylouceneVety)
         veta = prectiOtazkuZeSouboru("vety.txt", nahodnaVeta)
         print(f"Zformulujte a dokažte: {veta}")
-        casomira(10)
+        casomira(cas)
 
-def temata(vyloucenaTemata):
+def temata(vyloucenaTemata, cas = 15):
+        if cas == None:
+                cas = 15
         nahodneTema = nahodnaOtazka(27, vyloucenaTemata)
         tema = prectiOtazkuZeSouboru("temata.txt", nahodneTema)
         print(f"Co víte o tématu: {tema}")
         print("(definice, vlastnosti, odvození, použití, souvislosti, ...)")
-        casomira(15)
+        casomira(cas)
 
 def nahodnaOtazka(maximalniPocetOtazek, vylouceneOtazky = []):
         nahodnaOtazka = random.randint(1, maximalniPocetOtazek)
