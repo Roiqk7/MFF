@@ -1,4 +1,6 @@
-# Program na učení se lineární algebry
+# Program na učení se na zkoušku z lineární algebry 1
+
+Program je napsán na učení se na zkoušku z lineární algebry 1. Program obsahuje věty a témata, ze kterých se vybírá náhodně. Je aktuální k zimnímu semestru ročníku 2024/2025 na zkoušku od pana prof. Milana Hladíka.
 
 ## Návod na použití
 
@@ -33,3 +35,7 @@ Očekává argument ohraničený `""` a `[]`. Prvky v argumentu mohou být čís
 
 Tedy `...` lze použít tak, aby se nemuseli vypisovat všechny čísla v intervalu.
 **Pozor**: Indexy jsou číslovány od 1 a čísla ve výčtu jsou vždy včetně.
+
+### Zkouška
+
+Na "zkoušku" je u vět 10 minut a u témat 15 minut. Po uplynutí této doby se program ukončí. Pokud chcete skončit dříve, stiskněte `Ctrl+C`. Program je pro brzké ukončení připraven. Zhodnocení je pak ponecháno na uživateli.
