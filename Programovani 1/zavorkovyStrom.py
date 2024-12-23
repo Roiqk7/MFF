@@ -130,7 +130,6 @@ def vytvorStrom(zavorky):
                         if zavorky[i + 1] == "(":
                                 vrchol.pomocnaProsimFunguj = True
                         # zavorky[i + 1] == ")"
-                        # Pokud jsem v levým synu, tak musím k rodiči
                         elif vrchol.rodic != None:
                                 # Pokud jsem v levým synu, tak musím k rodiči
                                 if vrchol.rodic.levy == vrchol:
