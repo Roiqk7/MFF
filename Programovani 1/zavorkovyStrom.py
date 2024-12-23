@@ -53,8 +53,8 @@ Zobrazení stromu:
         ()
        /  \
       ()   R
-     / \
-    L   R
+     /  \
+    L    R
 
 Vstup:
 ()()
@@ -66,8 +66,8 @@ Zobrazení stromu:
         ()
        /  \
       L   ()
-         / \
-        L   R
+         /  \
+        L    R
 
 Vstup:
 (()())()
@@ -80,9 +80,9 @@ Zobrazení stromu:
        /  \
       ()   ()
      / \   / \
-    L  ()  L  R
-       / \
-      L   R
+    L  () L   R
+      /  \
+     L    R
 """
 
 class Node:
@@ -90,7 +90,7 @@ class Node:
                 self.rodic = rodic
                 self.levy = levy
                 self.pravy = pravy
-                self.pomocnaProsimFunguj = False
+                self.pomocnaProsimFunguj = False # Pomáhá rozpoznat jestli by měl být vytvořen pravý syn, lepší název: pravySynPriznak
 
 class Strom:
         def __init__(self, koren):
@@ -118,15 +118,18 @@ def vytvorStrom(zavorky):
         vrchol = strom.koren
         for i in range(1, len(zavorky) - 1):
                 zavorka = zavorky[i]
+                # Pokud je zavorka "(", tak vytvořím noveho syna
                 if zavorka == "(":
-                        novyVrchol = Node(rodic=vrchol)
+                        novySyn = Node(rodic=vrchol)
                         if vrchol.levy == None and vrchol.pomocnaProsimFunguj == False:
-                                vrchol.levy = novyVrchol
+                                vrchol.levy = novySyn
                                 vrchol = vrchol.levy
-                        else:
-                                vrchol.pravy = novyVrchol
+                        else: # Pokud existuje levý syn nebo je pomocná proměnná, tak vytvořím pravého syna
+                                vrchol.pravy = novySyn
                                 vrchol = vrchol.pravy
-                else:
+                else: # zavorka == ")"
+                        # Pokud jsou za sebou dvě zavorky ")(", tak si to do vrcholu poznamenáme
+                        # Pomáhá to rozpoznat, že by měl být vytvořen pravý syn
                         if zavorky[i + 1] == "(":
                                 vrchol.pomocnaProsimFunguj = True
                         # zavorky[i + 1] == ")"
