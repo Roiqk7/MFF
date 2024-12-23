@@ -15,15 +15,15 @@ parser = argparse.ArgumentParser()
 # Definice argumentů
 parser.add_argument("--vety", help="Zkouška vět", action='store_true')
 parser.add_argument("--temata", help="Zkouška témat", action='store_true')
-parser.add_argument("--vyluc", help="Vyloučí otázky/témata se zadanými indexy [1,2,3,...,N]")
+parser.add_argument("--vyluc", help="Vyloučí otázky/témata se zadanými indexy [1,2,3,...,N]", type=str)
 parser.add_argument("--cas", help="Časový limit v minutách", type=int)
 
 def main():
-        argumenty = parser.parse_args()
-
         try:
+                argumenty = parser.parse_args()
                 vylouceneOtazky = []
                 cas = None
+
                 if argumenty.vyluc:
                         vylouceneOtazky = vylouceneOtazkyParser(argumenty.vyluc)
                 if argumenty.cas:
@@ -54,7 +54,7 @@ def vylouceneOtazkyParser(strVylouceneOtazky):
                                         vylouceneOtazky.append(j)
                 else: # Číslo otázky
                         vylouceneOtazky.append(int(otazka))
-        # Odstranění duplikátů
+        # Odstranění duplikátů (né že by to bylo nutné, ale pro jistotu)
         vylouceneOtazky = list(set(vylouceneOtazky))
         return vylouceneOtazky
 
@@ -77,6 +77,7 @@ def temata(vyloucenaTemata, cas = 15):
 
 def nahodnaOtazka(maximalniPocetOtazek, vylouceneOtazky = []):
         nahodnaOtazka = random.randint(1, maximalniPocetOtazek)
+        # While cyklus zaručuje, že se nevybere otázka, která je vyloučena
         while nahodnaOtazka in vylouceneOtazky:
                 nahodnaOtazka = random.randint(1, maximalniPocetOtazek)
         return nahodnaOtazka
