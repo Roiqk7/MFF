@@ -1,0 +1,18 @@
+Frobeniova věta
+O existenci inverzní matice
+Jedna rovnost stačí
+O znaménku složení permutace a transpozice
+Malá Fermatova věta
+O existenci báze
+Steinitzova věta o výměně + lemma o výměně
+Dimenze podprostoru
+Dimenze spojení a průniku
+Maticové prostory a RREF
+O dimenzi jádra a hodnosti matice
+Prosté lineární zobrazení
+Maticová reprezentace lineárního zobrazení
+Matice složeného lineárního zobrazení
+Isomorfismus n-dimenzionálních prostorů
+O dimenzi jádra a obrazu
+Charakterizace afinního podprostoru
+Soustavy lineárních rovnic a afinní podprostory

@@ -1,0 +1,27 @@
+Soustavy lineárních rovnic: řešení a řešitelnost
+Elementární řádkové úpravy
+Redukovaný odstupňovaný tvar matice RREF
+Hodnost matice
+Základní operace s maticemi a jejich vlastnosti
+Regulární matice
+Inverzní matice
+Grupy (bez permutací)
+Permutace
+Tělesa
+Vektorový prostor a podprostor
+Lineární kombinace
+Lineární závislost a nezávislost
+Lineární obal
+Báze
+Dimenze
+Řádkový a sloupcový prostor matice
+Jádro matice
+Lineární zobrazení a základní vlastnosti
+Obraz lineárního zobrazení
+Jádro lineárního zobrazení
+Prosté lineární zobrazení
+Maticová reprezentace lineárního zobrazení
+Složené a inverzní lineární zobrazení a jejich matice
+Isomorfismus
+Prostor lineárních zobrazení
+Afinní prostory
