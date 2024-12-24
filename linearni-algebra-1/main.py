@@ -76,10 +76,6 @@ def temata(vyloucenaTemata, cas = 15):
         casomira(cas)
 
 def nahodnaOtazka(maximalniPocetOtazek, vylouceneOtazky = []):
-        # Ochrana proti zacyklení
-        if min(vylouceneOtazky) > maximalniPocetOtazek:
-                vytiskniChybu("Všechny otázky jsou vyloučeny. Pokud si nevíte rady, zkuste si přečíst nápovědu.")
-                raise ValueError("Všechny otázky jsou vyloučeny.")
         nahodnaOtazka = random.randint(1, maximalniPocetOtazek)
         # While cyklus zaručuje, že se nevybere otázka, která je vyloučena
         while nahodnaOtazka in vylouceneOtazky:
