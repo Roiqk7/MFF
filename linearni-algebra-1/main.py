@@ -77,6 +77,10 @@ def temata(vyloucenaTemata, cas = 15):
 
 def nahodnaOtazka(maximalniPocetOtazek, vylouceneOtazky = []):
         nahodnaOtazka = random.randint(1, maximalniPocetOtazek)
+        # Ochrana proti zacyklení
+        if len(vylouceneOtazky) >= maximalniPocetOtazek:
+                vytiskniChybu("Všechny otázky jsou vyloučeny. Pokud si nevíte rady, zkuste si přečíst nápovědu.")
+                raise ValueError("Všechny otázky jsou vyloučeny.")
         # While cyklus zaručuje, že se nevybere otázka, která je vyloučena
         while nahodnaOtazka in vylouceneOtazky:
                 nahodnaOtazka = random.randint(1, maximalniPocetOtazek)
