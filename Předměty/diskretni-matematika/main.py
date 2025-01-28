@@ -57,12 +57,10 @@ def vety():
         casomira(10)
 
 def definice():
-        if cas == None:
-                cas = 15
-        nahodneTema = nahodnaOtazka(41)
-        tema = prectiOtazkuZeSouboru("definice.txt", nahodneTema)
-        print(f"Co víte o tématu: {tema}")
-        casomira(1)
+        nahodnaDefinice = nahodnaOtazka(41)
+        definice = prectiOtazkuZeSouboru("definice.txt", nahodnaDefinice)
+        print(f"Zformulujte definici: {definice}")
+        casomira(2)
 
 def nahodnaOtazka(maximalniPocetOtazek):
         return random.randint(1, maximalniPocetOtazek)
