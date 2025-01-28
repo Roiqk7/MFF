@@ -7,7 +7,7 @@
 *Kredity: 36*
 *Kredity celkem: 36*
 
-- [Algoritmizace]([Algoritmizace](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NPRG062&skr=2024))
+- [Algoritmizace](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NPRG062&skr=2024)
 - [Diskrétní matematika](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NDMI002&skr=2024)
 - [Lineární algebra 1](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NMAI057&skr=2024)
 - [Principy počítačů](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NSWI120&skr=2024)
