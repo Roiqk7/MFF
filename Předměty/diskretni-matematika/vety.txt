@@ -1,0 +1,28 @@
+Třídy ekvivalence tvoří množinový rozklad
+Existence minimálního prvku v konečné ČUM
+věta o dlouhém a širokém
+počet funkcí z k-prvkové do n-prvkové množiny
+počet podmnožin k-prvkové množiny
+počet prostých funkcí z k-prvkové do n-prvkové množiny
+počet k-prvkových podmnožin n-prvkové množiny
+binomická věta
+princip inkluze a exkluze
+počet permutací bez pevného bodu
+princip sudosti
+charakterizace eulerovských grafů
+lemma o koncovém vrcholu
+věta o postupné výstavbě stromů
+charakterizace stromů
+K5 není rovinný
+Kuratowského věta (důkaz pouze =>)
+Eulerova formule (pro souvislý rovinný graf)
+horní mez na počet hran v rovinném grafu
+horní mez na počet hran rovinného grafu bez trojúhelníků
+rovinný graf obsahuje pouze vrchol stupně <= 5 (případně <= 3 pokud neobsahuje trojúhelníky)
+rovinné nakreslení se dá překreslit tak, aby vybraná stěna byla vnější
+barevnost je nejméně tak velká, jako klikovost
+k-degenerovaný graf je (k+1)-obarvitelný
+věta o pěti barvách
+věta o úplné pravděpodobnosti
+Bayesova věta
+linearita střední hodnoty

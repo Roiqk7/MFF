@@ -51,7 +51,7 @@ def vylouceneOtazkyParser(strVylouceneOtazky):
         return vylouceneOtazky
 
 def vety():
-        nahodnaVeta = nahodnaOtazka(18)
+        nahodnaVeta = nahodnaOtazka(28)
         veta = prectiOtazkuZeSouboru("vety.txt", nahodnaVeta)
         print(f"Zformulujte a dokažte: {veta}")
         casomira(10)
@@ -59,7 +59,7 @@ def vety():
 def definice():
         if cas == None:
                 cas = 15
-        nahodneTema = nahodnaOtazka(27)
+        nahodneTema = nahodnaOtazka(41)
         tema = prectiOtazkuZeSouboru("definice.txt", nahodneTema)
         print(f"Co víte o tématu: {tema}")
         casomira(1)

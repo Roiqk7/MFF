@@ -1,0 +1,41 @@
+kartézský součin
+relace
+složení relací
+reflexivita, symetrie, antisymetrie, tranzitivita
+ekvivalence, částečné uspořádání
+funkce
+složení funkcí
+funkce prosté, na, bijektivní
+třídy ekvivalence
+množinový rozklad
+bezprostřední předchůdce
+minimální, nejmenší, maximální, největší prvek
+porovnatelné prvky
+řetězec, anti řetězec
+šírka, výška ČUM
+potenční množina
+graf, vrcholy, hrany
+bipartitní graf
+podgraf, indukovaný podgraf
+cesta v grafu
+souvislý graf
+relace dosažitelnosti, komponenty souvislosti
+stupeň vrcholu
+eulerovský graf
+eulerovský tah
+orientovaný graf
+vstupní, výstupní stupeň vrcholu
+symetrizace orientovaného grafu
+kružnice v grafu
+strom
+list
+kostra grafu
+klikovost
+konečný pravděpodobnostní prostor
+elementární jevy, jevy
+klasický pravděpodobnostní prostor
+podmíněná pravděpodobnost
+nezávislost jevů
+střední hodnota, rozptyl
+náhodná veličina
+indikátor jevu
