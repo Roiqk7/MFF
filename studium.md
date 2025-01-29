@@ -22,8 +22,8 @@
 
 ### Letní Semestr
 
-*Kredity: 47*
-*Kredity celkem: 83*
+*Kredity: 46*
+*Kredity celkem: 82*
 
 - [Algoritmy a datové struktury 1](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NTIN060)
 - [Lineární algebra 2](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NMAI058)
@@ -44,7 +44,7 @@
 ### Zimní semestr
 
 *Kredity: 31*
-*Kredity celkem: 114*
+*Kredity celkem: 113*
 
 - [Algoritmy a datové struktury 2](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NTIN061)
 - [Kombinatorika a grafy 1](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDMI011)
@@ -57,7 +57,7 @@
 ### Letní semestr
 
 *Kredity: 28*
-*Kredity celkem: 142*
+*Kredity celkem: 141*
 
 - [Automaty a gramatiky](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NTIN071)
 - [Neprocedurální programování](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPRG005)
@@ -72,7 +72,7 @@
 ### Zimní semestr
 
 *Kredity: 25*
-*Kredity celkem: 167*
+*Kredity celkem: 166*
 
 - [Databázové systémy](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDBI025)
 - [Algoritmická teorie her](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDMI098)
@@ -83,7 +83,7 @@
 ### Letní semestr
 
 *Kredity: 16*
-*Kredity celkem: 183*
+*Kredity celkem: 182*
 
 - [Počítačové vidění](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPGR036)
 - [Přírodou inspirované algoritmy](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NAIL119)
