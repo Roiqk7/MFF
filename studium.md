@@ -18,12 +18,11 @@
 - [Elements of AI+](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NAIL130&skr=2024)
 - [Matematické dovednosti](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NMAI069)
 - [Matematické problémy nematematiků](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NMAT100&skr=2024)
-- [Rozšiřující seminář Algoritmy a datové struktury 1](https://is.cuni.cz/studium/predmety/index.php?id=46382ec4690549bba5b6e0954ae61fb4&tid=&do=predmet&kod=NTIN107)
 - [Úvod do řešení problémů kombinatorických, mat. i jiných (IPS) I](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NDMI050&skr=2024)
 
 ### Letní Semestr
 
-*Kredity: 46*
+*Kredity: 48*
 *Kredity celkem: 82*
 
 - [Algoritmy a datové struktury 1](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NTIN060)
@@ -37,10 +36,13 @@
 - [Ethics of AI+](https://is.cuni.cz/studium/predmety/index.php?id=be07e897b0cc8ef61f5bf04eecd2c9bd&tid=&do=predmet&kod=NAIL131)
 - [Matematické problémy nematematiků](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NMAT100&skr=2024)
 - [Praktikum z vývoje počítačových her v limitovaném čase](https://is.cuni.cz/studium/predmety/index.php?id=be07e897b0cc8ef61f5bf04eecd2c9bd&tid=&do=predmet&kod=NCGD006)
+- [Rozšiřující seminář Algoritmy a datové struktury 1](https://is.cuni.cz/studium/predmety/index.php?id=46382ec4690549bba5b6e0954ae61fb4&tid=&do=predmet&kod=NTIN107)
 - [Úvod do kryptografie](https://is.cuni.cz/studium/predmety/index.php?id=be07e897b0cc8ef61f5bf04eecd2c9bd&tid=&do=predmet&kod=NDMI100)
 - [Úvod do řešení problémů kombinatorických, mat. i jiných (IPS) II ](https://is.cuni.cz/studium/predmety/index.php?id=be07e897b0cc8ef61f5bf04eecd2c9bd&tid=&do=predmet&kod=NDMI051)
 
 ## 2. Ročník
+
+TODO: Upravit kredity podle toho, kolik jich doopravdy získám (všechny samozřejmě)
 
 ### Zimní semestr
 
