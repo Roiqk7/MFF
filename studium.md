@@ -18,6 +18,7 @@
 - [Elements of AI+](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NAIL130&skr=2024)
 - [Matematické dovednosti](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NMAI069)
 - [Matematické problémy nematematiků](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NMAT100&skr=2024)
+- [Rozšiřující seminář Algoritmy a datové struktury 1](https://is.cuni.cz/studium/predmety/index.php?id=46382ec4690549bba5b6e0954ae61fb4&tid=&do=predmet&kod=NTIN107)
 - [Úvod do řešení problémů kombinatorických, mat. i jiných (IPS) I](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NDMI050&skr=2024)
 
 ### Letní Semestr
