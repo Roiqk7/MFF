@@ -78,4 +78,8 @@ $A$ je jistý jev. Spíše se říká "skoro jistý", zkracuje se s. j.
 1. Udává novou pravděpodobnost, kde se "$ \Omega = B $"
 2. Pro podmíněnou pravděpodobnost platí všechna pravidla pro pravděpodobnost. Tedy ty body z věty výše.
 
+<<<<<<< HEAD
 </details>
+=======
+</details>
+>>>>>>> 294e21855559838cf3d1175d87aed5b03c594538
