@@ -78,8 +78,51 @@ $A$ je jistý jev. Spíše se říká "skoro jistý", zkracuje se s. j.
 1. Udává novou pravděpodobnost, kde se "$ \Omega = B $"
 2. Pro podmíněnou pravděpodobnost platí všechna pravidla pro pravděpodobnost. Tedy ty body z věty výše.
 
-<<<<<<< HEAD
 </details>
-=======
+
+## Lekce 2
+
+***Pravděpodobnostní prostory:***
+
+* *Klasický* - $\Omega$ je konečná, $P(A) = \frac{|A|}{|\Omega|}$
+* *Diskrétní* - $\Omega$ je konečná nebo spočetná, platí $\forall \omega \in \Omega : P(\omega) \in [0, 1]$ Dále platí $P(A) = \sum_{\omega \in A}^{} P_\omega, A \subseteq \Omega$
+* *Geometrický* - $\Omega \subseteq \mathbb{R}^d$, $P(A) = \frac{|A|}{|\Omega|}$, kde $|A| = objem$.
+* $f : \Omega \rightarrow [0, \infty), P(A) = \int_A f, \int f = 1$
+
+<details>
+<summary>Pozn.:</summary>
+
+Rozdíl mezi klasickým a diskrétním je např. klasická kostka x zobecněná kostka, kde např. $P(6) = 0.1$ atd.
+
 </details>
->>>>>>> 294e21855559838cf3d1175d87aed5b03c594538
+
+**Def:** Podmíněná pravděpodobnost:
+
+$$
+P(A|B) = \frac{P(A \cap B)}{P(B)}
+$$
+
+$$
+P(A \cap B) = P(B) \cdot P(A|B)
+$$
+
+*Pozn.:* $Q(A) = P(A|B)$ je také pravděpodobnost.
+
+**Věta:** (O zřetězeném podmiňování) Nechť $A_1, A_2, \dots, A_N \in \mathcal{F}, P(A_1 \cap A_2 \cap \dots \cap A_N) > 0$, pak $P(A_1 \cap A_2 \cap \dots \cap A_N) = P(A_1) \cdot  P(A_2 | A_1) \cdot P(A_3 | A_1 \cap A_2) \cdot \dots$
+
+**Důkaz:** $P(A_1 \cap A_2 \cap \dots \cap A_N) = P(A_1) \cdot \frac{P(A_1 \cap A_2)}{P(A_1)} \cdot \frac{P(A_1 \cap A_2 \cap A_3)}{P(A_1 \cap A_2)} \cdot \dots$ Po rozepsání je zřejmé, že se vše kromě posledního čitatele zkrátí.
+
+**Def:** Rozklad množiny $\Omega$ je $B_1, B_2, \cdots \in \mathcal{F}$ (konečná nebo spočetná) t. Ž. $\Omega = B_1 \cup B_2 \cup \dots$ a $B_i \cap B_j = \emptyset, i \neq j$
+
+**Věta:** (O celkové pravděpodobnosti) $B_1, B_2, \cdots \in \mathcal{F}$ rozklad $\Omega$, $A \in \mathcal{F}$, pak $P(A) = \sum P(B_i) \cdot P(A|B_i)$, pro $P(B_i) = 0$ je člen roven nule.
+
+**Důkaz:** $P(A) = \sum P(A \cap B_i) = ok$
+
+**Př.:** [Gamblers ruin cca 1:00:00](https://iuuk.mff.cuni.cz/~samal/video/ls2425/pst1-02.mp4)
+
+**Věta:** (Bayesova věta) $B_1, B_2, \cdots \in \mathcal{F}$ rozklad $\Omega$, $A \in \mathcal{F}$ a $P(A), P(B_j) > 0$, pak
+
+$$
+P(B_j| A) = \frac{P(A|B_j) P(B_j)}{\sum_i P(B_i) P(A|B_i)}
+$$
+Pro $P(B_i) = 0$ je člen roven nule.
