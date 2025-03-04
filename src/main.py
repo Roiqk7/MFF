@@ -32,14 +32,12 @@ def nacitacMain(nazevTxtSouboru: str, vylouceneOtazky: list[int] = []):
                 print(f"Načteno {len(otazkyVyfiltrovane)} otázek")
 
                 return otazkyVyfiltrovane
-
+        except FileNotFoundError:
+                logging.error(f"Soubor {nazevTxtSouboru} nebyl nalezen.")
+                return []
         except Exception as e:
-                vytiskniChybu("Nastala chyba", e)
-
-def vytiskniChybu(zprava: str, vyjimka: Exception = None):
-        print(f"[Chyba] {zprava}")
-        if vyjimka:
-                print(f"Vyjimka: {vyjimka}")
+                logging.exception("Nastala chyba při načítání otázek:", e)
+                return []
 
 """
 Zkouška
