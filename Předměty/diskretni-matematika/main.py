@@ -1,10 +1,10 @@
-""" 
-Datum: 23/12/2024
+#!/usr/bin/env python3
 
-Vstupní bod programu
-"""
+# Tento skript stačí zkopírovat a minimálně upravit
 
 import argparse
+import logging
+import os
 import random
 import sys
 import time
@@ -12,22 +12,84 @@ import time
 # Vytvoření parseru pro argumenty v konzoli
 parser = argparse.ArgumentParser()
 
-# Definice argumentů
-parser.add_argument("--vety", help="Zkouška vět", action='store_true')
-parser.add_argument("--definice", help="Zkouška definic", action='store_true')
+# Definice parametrů
+parser.add_argument("--soubor", help="Název .txt souboru s otázkami", type=str, required=True)
+parser.add_argument("--vyluc", help="Vyloučí otázky/témata se zadanými indexy [1,2,3,...,N]", type=str)
+parser.add_argument("--cas", help="Časový limit v minutách", type=int, default=10, const=10, nargs='?')
 
-def main():
+"""
+Soubor nacitac.py
+"""
+
+def nacitacMain(nazevTxtSouboru: str, vylouceneOtazky: list[int] = []):
         try:
-                argumenty = parser.parse_args()
+                with open(nazevTxtSouboru, "r", encoding="utf-8") as soubor:
+                        otazky = soubor.readlines()
 
-                if argumenty.vety:
-                        vety()
-                elif argumenty.definice:
-                        definice()
+                # Odstraníme vyloučené otázky
+                otazkyVyfiltrovane = [otazka for index, otazka in enumerate(otazky, start=1) if index not in vylouceneOtazky]
+
+                print(f"Načteno {len(otazkyVyfiltrovane)} otázek")
+
+                return otazkyVyfiltrovane
+
         except Exception as e:
-                vytiskniChybu("Nastala chyba při zpracování argumentů.", e)
+                vytiskniChybu("Nastala chyba", e)
 
-def vylouceneOtazkyParser(strVylouceneOtazky):
+def vytiskniChybu(zprava: str, vyjimka: Exception = None):
+        print(f"[Chyba] {zprava}")
+        if vyjimka:
+                print(f"Vyjimka: {vyjimka}")
+
+"""
+Soubor zkusitel.py
+"""
+
+def zkusitelMain(argumenty: argparse.Namespace):
+        logging.debug(f"Pracovní adresář: {os.getcwd()}")
+        try:
+                otazky = ziskejOtazky(argumenty)
+                if not otazky:
+                        raise ValueError("Seznam otázek je prázdný.")
+                nahodnaOtazka = random.randint(0, len(otazky) - 1)
+                print(f"Otázka: {otazky[nahodnaOtazka]}")
+                casomira(argumenty.cas)
+        except Exception as e:
+                logging.exception("Nastala chyba při běhu programu: ", e)
+
+def casomira(minutyCelkem):
+        try:
+                print(f"Začíná zkouška. Časový limit: {minutyCelkem} minut.")
+                sekundyCelkem = minutyCelkem * 60
+                for i in range(sekundyCelkem, 0, -15):
+                        minuty, sekundy = divmod(i, 60)
+                        sys.stdout.write(f"\rZbývá: [{minuty:02}:{sekundy:02}]")
+                        sys.stdout.flush()
+                        time.sleep(15)
+                # Odstraní časovač
+                sys.stdout.write("\r" + " " * 20 + "\r")
+                print("\nČas vypršel. Zkouška skončila.")
+        except KeyboardInterrupt:
+                print("\nZkouška byla předběžně ukončena.")
+        print("Zhodnoťte své odpovědi.")
+
+def ziskejOtazky(argumenty: argparse.Namespace) -> list[str]:
+        try:
+                soubor = argumenty.soubor
+                otazky = []
+                vylouceneOtazky = []
+
+                if not soubor:
+                        raise ValueError("Nebyl poskytnut soubor s otázkami.")
+                if argumenty.vyluc:
+                        vylouceneOtazky = vylouceneOtazkyParser(argumenty.vyluc)
+                otazky = nacitacMain(soubor, vylouceneOtazky)
+        except Exception as e:
+                logging.exception("Nastala chyba při získávání otázek: ", e)
+
+        return otazky
+
+def vylouceneOtazkyParser(strVylouceneOtazky) -> list[int]:
         vylouceneOtazkyNezpracovane = [prvek.strip() for prvek in strVylouceneOtazky.strip("[]").split(',')]
         vylouceneOtazky = []
         for i in range(len(vylouceneOtazkyNezpracovane)):
@@ -50,47 +112,8 @@ def vylouceneOtazkyParser(strVylouceneOtazky):
         vylouceneOtazky = list(set(vylouceneOtazky))
         return vylouceneOtazky
 
-def vety():
-        nahodnaVeta = nahodnaOtazka(28)
-        veta = prectiOtazkuZeSouboru("vety.txt", nahodnaVeta)
-        print(f"Zformulujte a dokažte: {veta}")
-        casomira(10)
-
-def definice():
-        nahodnaDefinice = nahodnaOtazka(41)
-        definice = prectiOtazkuZeSouboru("definice.txt", nahodnaDefinice)
-        print(f"Zformulujte definici: {definice}")
-        casomira(2)
-
-def nahodnaOtazka(maximalniPocetOtazek):
-        return random.randint(1, maximalniPocetOtazek)
-
-def prectiOtazkuZeSouboru(soubor, cisloOtazky):
-        with open(soubor, "r") as soubor:
-                for i, radek in enumerate(soubor, start=1):
-                        if i == cisloOtazky:
-                                return radek.strip()
-
-def vytiskniChybu(zprava, vyjimka = None):
-        print(f"[Chyba] {zprava}")
-        if vyjimka:
-                print(f"Vyjimka: {vyjimka}")
-
-def casomira(minutyCelkem):
-        try:
-                print(f"\nZačíná zkouška. Časový limit: {minutyCelkem} minut.")
-                sekundyCelkem = minutyCelkem * 60
-                for i in range(sekundyCelkem, 0, -15):
-                        minuty, sekundy = divmod(i, 60)
-                        sys.stdout.write(f"\rZbývá: [{minuty:02}:{sekundy:02}]")
-                        sys.stdout.flush()
-                        time.sleep(15)
-                # Odstraní časovač
-                sys.stdout.write("\r" + " " * 20 + "\r")
-                print("\nČas vypršel. Zkouška skončila.")
-        except KeyboardInterrupt:
-                print("\nZkouška byla předběžně ukončena.")
-        print("Zhodnoťte své odpovědi.")
+def main():
+        zkusitelMain(parser.parse_args())
 
 if __name__ == "__main__":
         main()
