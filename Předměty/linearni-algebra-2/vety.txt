@@ -1,0 +1,6 @@
+Pythagorova věta
+Cauchy-Schwarzova věta
+Věta o Fourierových koeficientech
+Věta o ortogonální projekci + tvrzení o kolmici
+Věta o ortogonálním doplňku v R^N
+Věta o ortogonální projekci v R^N

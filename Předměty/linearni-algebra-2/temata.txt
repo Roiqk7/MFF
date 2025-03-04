@@ -1,0 +1,7 @@
+Skalární součin
+Norma
+Ortonormální báze
+Ortogonální doplňek
+Ortogonální projekce
+Matice projekce. Metoda nejmenších čtverců
+Ortogonální matice
