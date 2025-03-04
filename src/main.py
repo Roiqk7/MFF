@@ -18,7 +18,7 @@ parser.add_argument("--vyluc", help="Vyloučí otázky/témata se zadanými inde
 parser.add_argument("--cas", help="Časový limit v minutách", type=int, default=10, const=10, nargs='?')
 
 """
-Soubor nacitac.py
+Načtení vstupu
 """
 
 def nacitacMain(nazevTxtSouboru: str, vylouceneOtazky: list[int] = []):
@@ -42,7 +42,7 @@ def vytiskniChybu(zprava: str, vyjimka: Exception = None):
                 print(f"Vyjimka: {vyjimka}")
 
 """
-Soubor zkusitel.py
+Zkouška
 """
 
 def zkusitelMain(argumenty: argparse.Namespace):
@@ -111,6 +111,10 @@ def vylouceneOtazkyParser(strVylouceneOtazky) -> list[int]:
         # Odstranění duplikátů (né že by to bylo nutné, ale pro jistotu)
         vylouceneOtazky = list(set(vylouceneOtazky))
         return vylouceneOtazky
+
+"""
+Main
+"""
 
 def main():
         zkusitelMain(parser.parse_args())
