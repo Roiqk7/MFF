@@ -42,7 +42,7 @@
 
 ## 2. Ročník
 
-TODO: Upravit kredity podle toho, kolik jich doopravdy získám (všechny samozřejmě)
+TODO: Dát finální verzi (momentálně draft)
 
 ### Zimní semestr
 
