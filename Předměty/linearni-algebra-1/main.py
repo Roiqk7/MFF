@@ -5,6 +5,7 @@ Vstupní bod programu
 """
 
 import argparse
+import logging
 import random
 import sys
 import time
@@ -87,11 +88,6 @@ def prectiOtazkuZeSouboru(soubor, cisloOtazky):
                 for i, radek in enumerate(soubor, start=1):
                         if i == cisloOtazky:
                                 return radek.strip()
-
-def vytiskniChybu(zprava, vyjimka = None):
-        print(f"[Chyba] {zprava}")
-        if vyjimka:
-                print(f"Vyjimka: {vyjimka}")
 
 def casomira(minutyCelkem):
         try:

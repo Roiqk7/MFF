@@ -6,24 +6,27 @@ Vstupní bod programu
 
 from nacitac import nacitacMain
 import argparse
+import logging
+import os
 import random
 import sys
 import time
 
 def zkusitelMain(argumenty: argparse.Namespace):
+        logging.debug(f"Pracovní adresář: {os.getcwd()}")
         try:
                 otazky = ziskejOtazky(argumenty)
                 if not otazky:
                         raise ValueError("Seznam otázek je prázdný.")
                 nahodnaOtazka = random.randint(0, len(otazky) - 1)
                 print(f"Otázka: {otazky[nahodnaOtazka]}")
+                casomira(argumenty.cas)
         except Exception as e:
-                vytiskniChybu("Nastala chyba při zpracování argumentů.", e)
-        casomira(cas = argumenty.cas)
+                logging.exception("Nastala chyba při běhu programu: ", e)
 
 def casomira(minutyCelkem):
         try:
-                print(f"\nZačíná zkouška. Časový limit: {minutyCelkem} minut.")
+                print(f"Začíná zkouška. Časový limit: {minutyCelkem} minut.")
                 sekundyCelkem = minutyCelkem * 60
                 for i in range(sekundyCelkem, 0, -15):
                         minuty, sekundy = divmod(i, 60)
@@ -42,17 +45,14 @@ def ziskejOtazky(argumenty: argparse.Namespace) -> list[str]:
                 soubor = argumenty.soubor
                 otazky = []
                 vylouceneOtazky = []
-                cas = None
 
                 if not soubor:
                         raise ValueError("Nebyl poskytnut soubor s otázkami.")
                 if argumenty.vyluc:
                         vylouceneOtazky = vylouceneOtazkyParser(argumenty.vyluc)
-                if argumenty.cas:
-                        cas = argumenty.cas
                 otazky = nacitacMain(soubor, vylouceneOtazky)
         except Exception as e:
-                vytiskniChybu("Nastala chyba při zpracování argumentů.", e)
+                logging.exception("Nastala chyba při získávání otázek: ", e)
 
         return otazky
 
@@ -78,8 +78,3 @@ def vylouceneOtazkyParser(strVylouceneOtazky) -> list[int]:
         # Odstranění duplikátů (né že by to bylo nutné, ale pro jistotu)
         vylouceneOtazky = list(set(vylouceneOtazky))
         return vylouceneOtazky
-
-def vytiskniChybu(zprava, vyjimka = None):
-        print(f"[Chyba] {zprava}")
-        if vyjimka:
-                print(f"Vyjimka: {vyjimka}")

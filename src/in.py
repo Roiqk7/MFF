@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Tento skript stačí zkopírovat a minimálně upravit
 
 # TODO: Přidej cestu k src/zkusitel
