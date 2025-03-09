@@ -50,21 +50,22 @@ TODO: Dát finální verzi (momentálně draft)
 *Kredity celkem: 113*
 
 - [Algoritmy a datové struktury 2](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NTIN061)
+- [Databázové systémy](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDBI025)
 - [Kombinatorika a grafy 1](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDMI011)
 - [Matematická analýza 2](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NMAI055)
-- [Pravděpodobnost a statistika 2](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NMAI073)
-- [Programování v jazyce C++](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPRG041)
+- [Programování v jazyce C#](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPRG041)
 - [Výroková a predikátová logika](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NAIL062)
 - [Tělesná výchova III](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NTVY014&skr=2024)
 
 ### Letní semestr
 
-*Kredity: 28*
+*Kredity: 32*
 *Kredity celkem: 141*
 
 - [Automaty a gramatiky](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NTIN071)
 - [Neprocedurální programování](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPRG005)
 - [Diskrétní a spojitá optimalizace](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NOPT046)
+- [Pokročilé programování v jazyce C#](https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG038)
 - [Ročníkový projekt](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPRG045)
 - [Úvod do umělé inteligence](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NAIL120)
 - [Anglický jazyk — zkouška pro bakaláře](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NJAZ091)
@@ -74,10 +75,9 @@ TODO: Dát finální verzi (momentálně draft)
 
 ### Zimní semestr
 
-*Kredity: 25*
+*Kredity: 20*
 *Kredity celkem: 166*
 
-- [Databázové systémy](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDBI025)
 - [Algoritmická teorie her](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDMI098)
 - [Programováni v jazyce Java](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPRG013)
 - [Strojové učení v počítačovém vidění](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPGR035)
