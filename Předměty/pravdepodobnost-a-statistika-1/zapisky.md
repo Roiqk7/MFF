@@ -126,3 +126,29 @@ $$
 P(B_j| A) = \frac{P(A|B_j) P(B_j)}{\sum_i P(B_i) P(A|B_i)}
 $$
 Pro $P(B_i) = 0$ je člen roven nule.
+
+## Lekce 3
+
+**Def:** Jevy $A, B$ jsou nezávislé, pokud $P(A \cap B) = P(A) \cdot P(B)$
+
+**Def:** Jevy $\{A_i : i \in I\}$ jsou nezávislé, pokud $\forall \text{ konečnou } J \subseteq I : P(\cap_j A_j) = \prod_j A_j, j \in J$
+
+**Def:** Diskrétní náhodná veličina v pravd. prostoru $(\Omega, \mathcal{F}, P)$ je zobrazení $X: \Omega \rightarrow \mathbb{R}$ t. ž. $\forall x \in \mathbb{R} : \{\omega \in \Omega : X(\omega) = x\} \in \mathcal{F}$ a obor hodnot $Im(X)$ je konečný nebo spočetný.
+
+<details>
+<summary>Pozn.:</summary>
+
+- Pro jev součtu hodu kostkou $X: \Omega \rightarrow \{2, 3, \dots, 12\}$
+- $\{\omega \in \Omega : X(\omega) = x\} \equiv \{X = x\} \equiv X^{-1}(x) \equiv \text{ množina všech jevů, které se zobrazí na dané reálné číslo}$
+
+</details>
+
+**Pozorování:** $X$ n. v. a $Px$ její pravd. fce $\mathbb{R} \rightarrow [0, 1]$, potom $\sum_{x \in Im(X)} P_x ^{(x)} = \sum_{x \in Im(X)} P(X = x) = \sum_{x \in Im(X)} P(A_x) = P(\cup_{x \in Im(x)} A_x) = P(\Omega) = 1.$
+
+**Příklady:**
+1) *Bernoulliho rozdělení* - binární rozdělení ($X = 0 \text{ nebo } 1$). $P(X = 1) = p, P(X = 0) = 1 - p$. Indikátorová náhodná veličina.
+2) *Geometrické rozdělení* - např. $X = \text{kolikátým hodem padla 6}$, úspěch s pravd. $p$ značíme $Geo(p), P(X = 1) = p, P(X = k) = (1-p)^{k-1}p, k \geq 1$
+3) *Binomické rozdělení* - $Bin(n, p)$ X je počet úspěchů z n pokusů. $P(X = k) = \binom{n}{k}p^k(1-p)^{n-k}$
+4) *Poissonovo rozdělení* - $Pois(\lambda), \lambda \in \mathbb{R^+}$. $P(X = \lambda) = e^{-\lambda} \frac{\lambda^k}{k!}$
+
+*Poissonova aprox.:* $Pois(\lambda)$ je limita $Bin(n, \frac{\lambda}{n})$. Tedy $P(Bin(n, \frac{\lambda}{n}) = k) = \binom{n}{k}(\frac{\lambda}{n})^k (1 - \frac{\lambda}{n})^{n-k} = \dots = e^{-\lambda} \frac{\lambda^k}{k!}$ [1:20:30](https://iuuk.mff.cuni.cz/~samal/video/ls2425/pst1-03.mp4)
