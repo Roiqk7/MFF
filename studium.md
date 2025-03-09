@@ -53,7 +53,7 @@ TODO: Dát finální verzi (momentálně draft)
 - [Databázové systémy](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDBI025)
 - [Kombinatorika a grafy 1](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NDMI011)
 - [Matematická analýza 2](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NMAI055)
-- [Programování v jazyce C#](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NPRG041)
+- [Programování v jazyce C#](https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG035)
 - [Výroková a predikátová logika](http://is.cuni.cz/studium/garantlink.php?glogin=false&gmodul=predmety&gscript=redir.php&redir=predmet&kod=NAIL062)
 - [Tělesná výchova III](https://is.cuni.cz/studium/predmety/redir.php?id=bb071aae1982b06f51544a7a2a00a7ea&tid=&redir=predmet&kod=NTVY014&skr=2024)
 
